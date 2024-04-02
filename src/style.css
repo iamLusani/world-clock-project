@@ -1,0 +1,44 @@
+h1 {
+  font-size: 35px;
+  font-family: Poppins;
+  font-weight: 750;
+}
+select {
+  padding: 10px;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+small {
+  margin-bottom: 35px;
+  margin-left: 15px;
+}
+.container {
+  background-color: rgb(252, 252, 237);
+  width: 700px;
+  height: 600px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: block;
+  margin: 0 auto;
+}
+.cities {
+  font-size: 25px;
+  margin-left: 15px;
+  margin-bottom: 0 auto;
+  border-bottom: 1px dashed rgba(26, 23, 20, 0.2);
+  font-family: Bebas Neue;
+}
+.time {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  font-size: 30px;
+  font-family: Bebas Neue;
+}
+footer {
+  margin-top: 35px;
+  text-align: center;
+  font-family: Bebas Neue;
+}
