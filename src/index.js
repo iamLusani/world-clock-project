@@ -44,4 +44,19 @@ function newJerseyRefresh() {
   dateElement.innerHTML = `${newjerseyDate}`;
   timeElement.innerHTML = `${jerseyTime}`;
 }
+
+function changeData(event) {
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.replace("-", " ").split("/")[1];
+  let cityTime = moment.tz(cityTimeZone);
+  let city = document.querySelector("#city");
+  city.innerHTML = `<div class="city container"> <div class="cities">${cityName}</div>
+        <small class="durbanDate">${cityTime.format("Do, MMMM YYYY")} </small
+          ><span class="time" >${cityTime.format("HH:mm:ss")}</span></div>
+
+  `;
+}
 setInterval(newJerseyRefresh, 100);
+
+let citiesElemnt = document.querySelector("#selctedOptions");
+citiesElemnt, addEventListener("change", changeData);
