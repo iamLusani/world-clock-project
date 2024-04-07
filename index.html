@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
@@ -28,20 +30,24 @@
           <option value="Bristol">Bristol</option>
         </select>
       </header>
-
+      <h1></h1>
       <main>
         <div class="cities">Durban</div>
-        <small> April 9 2024 </small><span class="time">19:09:11</span>
+        <small class="durbanDate"></small
+        ><span class="time" id="durTime"></span>
 
         <div class="cities">Londen</div>
-        <small> April 9 2024 </small><span class="time">19:09:11</span>
+        <small id="londenDate"> April 9 2024 </small
+        ><span class="time" id="timeForLonden">19:09:11</span>
 
         <div class="cities">Japen</div>
-        <small> April 9 2024 </small><span class="time">19:09:11</span>
+        <small id="japenDateee"> April 9 2024 </small
+        ><span class="time" id="AsiaTim">19:09:11</span>
 
         <div class="cities">New Jersey</div>
 
-        <small> April 9 2024 </small> <span class="time">19:09:11</span>
+        <small id="newMonth"> April 9 2024 </small>
+        <span class="time" id="jerseyIme">19:09:11</span>
       </main>
 
       <footer>
@@ -59,6 +65,7 @@
         <a href="https://clock-forworld-time.netlify.app/" target="_blank"
           >hosted on netlify</a
         >
+        <script src="src/index.js"></script>
       </footer>
     </div>
   </body>
