@@ -55,7 +55,9 @@ function changeData(event) {
   let city = document.querySelector("#city");
   city.innerHTML = `<div class="city container"> <div class="cities">${cityName}</div>
         <small class="durbanDate">${cityTime.format("Do, MMMM YYYY")} </small
-          ><span class="time" >${cityTime.format("HH:mm:ss")}</span></div>
+          ><span class="time" >${cityTime.format(
+            "HH:mm:ss"
+          )}</span></div> <a  class="link" href="/">Return to all cities</a>
 
   `;
 }
